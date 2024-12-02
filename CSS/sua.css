@@ -1,0 +1,199 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 70px;
+    align-items: center;
+    font-size: 22px;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+}
+
+.others {
+    flex: 1;
+    display: flex;
+}
+
+.menu>li {
+    padding: 0 12px;
+    position: relative;
+}
+
+.female-menu ul {
+    padding: 13px;
+}
+
+.female-menu {
+    position: absolute;
+    font-size: 16px;
+    width: 120px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 10px;
+    visibility: hidden;
+    transition: 0.2s;
+    top: 60px;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.menu>li:hover .female-menu {
+    display: block;
+    top: 50px;
+    visibility: visible;
+}
+
+.menu>li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.others>li {
+    padding: 0 12px;
+}
+.others>li:first-child {
+    position: relative;
+}
+
+.others>li:first-child input {
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.others>li:first-child i {
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+/* SECTION */
+/* Section Container */
+.sc {
+    width: 500px;
+    background-color: white;
+    border: 1px solid black;
+    height: 450px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align:center; 
+    margin-left: 350px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    border: none;
+}
+
+/* Form Container */
+.div2 {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Form Fields */
+.search {
+    width: 90%;
+    margin-top: 10px;
+    display: flex;  /* Sử dụng flexbox để căn chỉnh các phần tử ngang */
+    justify-content: space-between;  /* Đảm bảo các phần tử được căn chỉnh đều */
+    align-items: center;  /* Căn chỉnh dọc giữa */
+}
+
+/* Label cho các trường nhập liệu */
+.p1 {
+    text-align: left;
+}
+
+/* Các trường input */
+.ip1 {
+    width: 50%;  /* Mỗi input chiếm 70% chiều rộng của container, còn lại cho label */
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+.btn{
+    width:200px;
+    height:50px;
+    font-size:30px;
+    text-align:center; 
+    margin:30px 0px 0px 0px
+}
+
+/* -------------------app---------------- */
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 100px 0 50px 0;
+}   
+.app {
+    margin: 50px;
+
+}
+.app img {
+    height: 50px;
+}
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: black;
+}
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    outline:none;
+}
+/* FOOTER */
+.footer-top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.end {
+    text-align: center;
+}
+.footer-top li {
+    padding:0 12px ;
+    position: relative;
+}
+.footer-top li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background:#ccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,194 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 70px;
+    align-items: center;
+    font-size: 22px;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+}
+
+.others {
+    flex: 1;
+    display: flex;
+}
+
+.menu>li {
+    padding: 0 12px;
+    position: relative;
+}
+
+.female-menu ul {
+    padding: 13px;
+}
+
+.female-menu {
+    position: absolute;
+    font-size: 16px;
+    width: 120px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 10px;
+    visibility: hidden;
+    transition: 0.2s;
+    top: 60px;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.menu>li:hover .female-menu {
+    display: block;
+    top: 50px;
+    visibility: visible;
+}
+
+.menu>li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.others>li {
+    padding: 0 12px;
+}
+.others>li:first-child {
+    position: relative;
+}
+
+.others>li:first-child input {
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.others>li:first-child i {
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+/* SECTION */
+.sc{
+    width: 1000px;
+    display: flex;
+    border: 2px solid rgb(211, 211, 211);
+    background-color: rgb(211, 211, 211);
+    margin: 0 0 0 30px;
+}
+a{  
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    border: none;
+}
+.div2{
+    width: 100%;
+    background-color: white;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+label {
+    font-weight: bold;
+    padding: 5px;  /* Thêm padding cho label */
+    border-radius: 3px;
+    margin-left: 100px;
+}
+
+input, select {
+    width: 250;  /* Các trường input và select chiếm 100% chiều rộng của phần tử cha */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;  /* Đảm bảo padding và border không làm ảnh hưởng đến chiều rộng */
+    margin-left:70px;
+}
+.form-group{
+    margin-top: 20px;
+    width: 90%;
+}
+button{
+    width: 250;
+    height: 50;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    margin-left: 170px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+/* -------------------app---------------- */
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 100px 0 50px 0;
+}   
+.app {
+    margin: 50px;
+
+}
+.app img {
+    height: 50px;
+}
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: black;
+}
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    outline:none;
+}
+/* FOOTER */
+.footer-top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.end {
+    text-align: center;
+}
+.footer-top li {
+    padding:0 12px ;
+    position: relative;
+}
+.footer-top li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background:#ccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

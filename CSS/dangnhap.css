@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+    flex-direction: column;
+}
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 70px;
+    align-items: center;
+    font-size: 22px;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+}
+
+.others {
+    flex: 1;
+    display: flex;
+}
+
+.menu>li {
+    padding: 0 12px;
+    position: relative;
+}
+
+.female-menu ul {
+    padding: 13px;
+}
+
+.female-menu {
+    position: absolute;
+    font-size: 16px;
+    width: 120px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 10px;
+    visibility: hidden;
+    transition: 0.2s;
+    top: 60px;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.menu>li:hover .female-menu {
+    display: block;
+    top: 50px;
+    visibility: visible;
+}
+
+.menu>li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.others>li {
+    padding: 0 12px;
+}
+.others>li:first-child {
+    position: relative;
+}
+
+.others>li:first-child input {
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.others>li:first-child i {
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+/* SECTION */
+.login-container {
+    background-color: rgb(233, 233, 233);
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px 2px rgba(0.2, 0.2, 0.2, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+.login-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.options a {
+    color: #333;
+    text-decoration: none;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login-options a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button {
+    padding: 14px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+/* -------------------app---------------- */
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 100px 0 50px 0;
+}   
+.app {
+    margin: 50px;
+
+}
+.app img {
+    height: 50px;
+}
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: black;
+}
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    outline:none;
+}
+/* FOOTER */
+.footer-top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.end {
+    text-align: center;
+}
+.footer-top li {
+    padding:0 12px ;
+    position: relative;
+}
+.footer-top li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background:#ccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

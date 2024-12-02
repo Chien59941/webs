@@ -1,0 +1,294 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 70px;
+    align-items: center;
+    font-size: 22px;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+}
+
+.others {
+    flex: 1;
+    display: flex;
+}
+
+.menu>li {
+    padding: 0 12px;
+    position: relative;
+}
+
+.female-menu ul {
+    padding: 13px;
+}
+
+.female-menu {
+    position: absolute;
+    font-size: 16px;
+    width: 120px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 10px;
+    visibility: hidden;
+    transition: 0.2s;
+    top: 60px;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.menu>li:hover .female-menu {
+    display: block;
+    top: 50px;
+    visibility: visible;
+}
+
+.menu>li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.others>li {
+    padding: 0 12px;
+}
+.others>li:first-child {
+    position: relative;
+}
+
+.others>li:first-child input {
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.others>li:first-child i {
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+/* SECTION */
+.ThanhToan{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row; 
+    padding-left: 50px;
+    border: 1px solid black; 
+    width: 1000;
+     height: auto;
+}
+.container{
+    width: 350px;
+    border-right: 2px solid black ; 
+    margin-left: 50px;
+}
+.ThanhToan-top-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ThanhToan-top{
+    height: 2px;
+    width: 70%;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 10px;
+}
+.ThanhToan-top-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dddddd;
+}
+.ThanhToan-top-item i{
+    color: #dddddd;
+}
+.ThanhToan-top-ThanhToan{
+    border: 1px solid #0DB7EA;
+}
+.ThanhToan-top-ThanhToan i{
+    color: #0DB7EA;
+}
+.ThanhToan-content-left{
+    width: 60%;
+}
+.ThanhToan-content-right{
+    width: 40%;
+    border-left: 2px solid #ddd;
+    padding-left: 12px;
+}
+.ThanhToan-content-left p,label{
+    font-size: 12px;
+    font-family: var(--main-text-font);
+}
+.ThanhToan-content-right-button{
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px dashed #dddddd;
+}
+.ThanhToan-content-right-button input{
+    height: 30px;
+    width: 200px;
+    margin-right: 100px;
+    margin-left: 12px;
+}
+.ThanhToan-content-right-button button{
+    height: 30px;
+    width: 1oopx;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.ThanhToan-content-right-ThanhToan{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+.ThanhToan-content-right-ThanhToan button{
+    height: 35px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+}
+.ThanhToan-content-right-ThanhToan button:hover{
+    background-color: black;
+    color: #fff;
+}
+/* thông tin sản phẩm */
+.ttsp {
+    display: flex;
+    flex-direction: row; /* Các phần tử con sẽ được sắp xếp theo hàng ngang */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử cha */
+    height: 100%; /* Chiếm toàn bộ chiều cao của phần tử cha */
+    gap: 50px;
+}
+
+.hinhanh {
+    width: 40%; /* Chiếm 40% chiều rộng của .ttsp */
+    height: 100%; /* Chiều cao đầy đủ của .ttsp */
+    display: flex; /* Nếu có phần tử con cần sắp xếp, giữ flex */
+    align-items: center; /* Căn giữa theo chiều dọc nếu cần */
+    margin-left: 50px;
+}
+
+.ha {
+    padding: 50px; /* Giảm padding để phần tử không quá lớn */
+    width: 280px; /* Kích thước cố định */
+    height: 350px; /* Kích thước cố định */
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.thongtin {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các phần tử con */
+    padding: 20px; /* Giảm padding để không gian hợp lý hơn */
+    width: 40%;
+    height: 47%;
+    padding: 20px;
+    border-radius: 8px; 
+}
+th, td, tr {
+    font-size: 20px;
+    padding: 12px; /* Cải thiện khoảng cách trong các ô */
+    border: 1px solid black;
+    color: black; /* Màu chữ tối cho bảng để dễ đọc */
+}
+.nut {
+    margin-top: 20px;
+    width: 23vw; /* Chiều rộng của nút chiếm 20% chiều rộng cửa sổ */
+    height: 5vw; /* Chiều cao của nút chiếm 5% chiều rộng cửa sổ */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    background-color: aliceblue; /* Màu nền sáng */
+    color: black; /* Màu chữ */
+    border: none; /* Không viền */
+    border-radius: 5px; /* Góc tròn */
+    font-size: 25px; /* Kích thước chữ (đảm bảo có đơn vị) */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+    text-align: center; /* Căn giữa văn bản trong nút */
+    display: inline-block; /* Đảm bảo nút có thể căn giữa dễ dàng */
+}
+
+/* -------------------app---------------- */
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 100px 0 50px 0;
+}   
+.app {
+    margin: 50px;
+
+}
+.app img {
+    height: 50px;
+}
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: black;
+}
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    outline:none;
+}
+/* FOOTER */
+.footer-top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.end {
+    text-align: center;
+}
+.footer-top li {
+    padding:0 12px ;
+    position: relative;
+}
+.footer-top li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background:#ccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
