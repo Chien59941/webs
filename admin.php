@@ -1,6 +1,6 @@
 <?php
 require 'database/connect.php';
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
+if (isset($_POST['delete'])) {
   $id = $_POST['id'];
   $id_int = (int)$id;
   $sql = "SELECT id_sp FROM sanpham WHERE id_sp = $id_int";
